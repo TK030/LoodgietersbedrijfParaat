@@ -82,13 +82,7 @@ header {
     color: var(--blauw);
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.2s;
     position: relative;
-}
-
-.nav-links a:hover,
-.nav-mobile a:hover {
-    color: var(--oranje);
 }
 
 .hamburger {
@@ -348,15 +342,22 @@ h2 {
 }
 
 .blogpost a {
-    color: var(--oranje);
+    color: var(--wit);
     text-decoration: none;
     font-weight: bold;
     margin-top: auto;
     transition: color 0.2s;
+    font-size: 1.1rem;
+    display: flex;
+    border: #1f4b6e 1px solid;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    justify-content: center;
+    background-color: #1f4b6e;
 }
 
 .blogpost a:hover {
-    color: var(--blauw);
+    color: var(--oranje);
 }
 
 .contact-card {
