@@ -220,10 +220,8 @@ h2 {
 
 .diensten-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
 }
 
 .dienst {
@@ -231,7 +229,6 @@ h2 {
     color: var(--blauw);
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(31, 75, 110, 0.08);
-    padding: 2rem 1.2rem;
     text-align: center;
     transition:
         transform 0.35s cubic-bezier(.22, 1, .36, 1),
@@ -241,6 +238,11 @@ h2 {
     z-index: 1;
     opacity: 0;
     transform: translateY(40px);
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    height: 450px;
+    overflow: hidden;
 }
 
 .dienst.inview,
@@ -264,11 +266,6 @@ h2 {
     z-index: 2;
 }
 
-.dienst img {
-    width: 56px;
-    margin-bottom: 1rem;
-}
-
 .dienst-icoon {
     display: block;
     margin: 0 auto 1rem auto;
@@ -276,10 +273,13 @@ h2 {
     height: 56px;
     transition: transform 0.6s cubic-bezier(.25, .8, .25, 1);
     will-change: transform;
+    position: relative;
+    /* voor stacking, niet absoluut! */
+    z-index: 2;
 }
 
-.dienst:hover .dienst-icoon,
-.dienst:focus-within .dienst-icoon {
+.dienst:hover .icoon-animatie,
+.dienst:focus-within .icoon-animatie {
     transform: rotate(360deg) scale(1.13);
 }
 
@@ -287,6 +287,50 @@ h2 {
     display: block;
     width: 56px;
     height: 56px;
+}
+
+.icoon-animatie {
+    display: block;
+    width: 56px;
+    height: 56px;
+    transition: transform 0.6s cubic-bezier(.25, .8, .25, 1);
+    will-change: transform;
+}
+
+.dienst-img-wrap {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dienst-afbeelding {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 14px 14px 0 0;
+    display: block;
+    margin: 0;
+    background: #eee;
+    box-sizing: border-box;
+}
+
+.dienst-img-wrap .dienst-icoon {
+    position: absolute;
+    left: 50%;
+    bottom: -28px;
+    transform: translateX(-50%);
+    margin: 0;
+    width: 56px;
+    height: 56px;
+    z-index: 2;
+    background: transparent;
+}
+
+.dienst h3 {
+    margin-top: 2.5em;
+    /* ruimte voor het overlappende icoon */
 }
 
 .overons-content {
@@ -488,15 +532,24 @@ textarea:focus {
 .footer-top {
     display: flex;
     flex-wrap: wrap;
+    gap: 2em;
     justify-content: space-between;
-    max-width: 1100px;
-    margin: 0 auto 1.5rem auto;
-    gap: 2rem;
+    align-items: flex-start;
 }
 
 .footer-col {
     flex: 1 1 180px;
     min-width: 180px;
+    margin-bottom: 1.5em;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 140px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0002;
+    display: block;
 }
 
 .footer-col h3 {
@@ -645,6 +698,44 @@ hr {
     width: 1.2em;
 }
 
+#backToTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+    background: #ee9a3a;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(31, 75, 110, 0.15);
+    font-size: 2rem;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+#backToTop.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#backToTop svg {
+    display: block;
+    color: #fff;
+    transition: color 0.2s;
+}
+
+#backToTop:hover {
+    background-color: #1f4b6e;
+    transition: background-color 0.2s;
+}
+
 @media (max-width: 900px) {
 
     .nav-links {
@@ -670,16 +761,20 @@ hr {
         text-align: center;
     }
 
-    .footer-top {
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: flex-start;
+    .main-footer {
+        max-width: 900px;
     }
 
-    .footer-bottom {
-        flex-direction: column;
-        gap: 0.3rem;
-        text-align: center;
+    .footer-top {
+        gap: 1em;
+    }
+
+    .footer-col {
+        min-width: 120px;
+    }
+
+    .footer-map iframe {
+        height: 180px;
     }
 }
 
@@ -722,5 +817,24 @@ hr {
 
     .contact-card {
         padding: 1rem 0.5rem 1.2rem 0.5rem;
+    }
+
+    .main-footer {
+        max-width: 100vw;
+        padding: 0 0.5em;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .footer-col {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .footer-map iframe {
+        height: 180px;
     }
 }
