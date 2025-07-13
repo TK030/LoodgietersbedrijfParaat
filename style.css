@@ -20,13 +20,13 @@ body {
     line-height: 1.6;
 }
 
-header {
+/* header {
     position: sticky;
     top: 0;
     background: var(--wit);
     box-shadow: var(--schaduw);
     z-index: 100;
-}
+} */
 
 .navbar {
     position: fixed;
@@ -734,6 +734,83 @@ hr {
 #backToTop:hover {
     background-color: #1f4b6e;
     transition: background-color 0.2s;
+}
+
+.blog-main {
+    max-width: 800px;
+    margin: 4em auto 2em auto;
+    padding-top: 5em;
+}
+
+.blog-post-detail {
+    background: var(--wit);
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(31, 75, 110, 0.1);
+}
+
+.blog-post-header h1 {
+    color: var(--blauw);
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.blog-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 1.5em;
+}
+
+.blog-post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+
+.blog-post-content h2 {
+    color: var(--oranje);
+    font-size: 1.8em;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+.blog-post-content p {
+    line-height: 1.7;
+    margin-bottom: 1em;
+}
+
+.terug-link {
+    display: inline-block;
+    margin-top: 2em;
+    color: var(--oranje);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.terug-link:hover {
+    color: var(--blauw);
+}
+
+.blog-meer {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.blog-meer .btn {
+    background: #ee9a3a;
+    color: #fff;
+    padding: 0.8em 2em;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+    display: inline-block;
+}
+
+.blog-meer .btn:hover {
+    color: #1f4b6e;
 }
 
 @media (max-width: 900px) {

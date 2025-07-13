@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loodgieter Paraat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="loodgietersbedrijfParaatAchtergrond_logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" aria-label="Hoofdnavigatie">
+            <div class="nav-logo">
+                <a href="#hero" aria-label="Ga naar de homepage">
+                    <img src="loodgietersbedrijfParaat_logo.png" alt="Loodgieter Paraat logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="index.php#diensten">Diensten</a></li>
+                <li><a href="index.php#over">Over ons</a></li>
+                <li><a href="index.php#blog">Blog</a></li>
+                <li><a href="index.php#contact">Contact</a></li>
+                <a href="tel:0612345678" class="cta-btn cta-call">
+                    <span class="cta-icon">
+                        <svg width="22" height="22" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <circle cx="14" cy="14" r="14" fill="#ee9a3a" />
+                            <path
+                                d="M19.5 17.2l-2.1-1a1.2 1.2 0 0 0-1.3.3l-.9 1.1a9.2 9.2 0 0 1-4.3-4.3l1.1-.9a1.2 1.2 0 0 0 .3-1.3l-1-2.1a1.2 1.2 0 0 0-1.3-.7l-2.2.5a1.2 1.2 0 0 0-1 1.2c0 6.1 5 11.1 11.1 11.1a1.2 1.2 0 0 0 1.2-1l.5-2.2a1.2 1.2 0 0 0-.7-1.3z"
+                                fill="none" stroke="#fff" stroke-width="2" />
+                        </svg>
+                    </span>
+                    06-12345678
+                </a>
+            </ul>
+            <button class="hamburger" aria-label="Menu openen" aria-expanded="false" aria-controls="nav-menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+        <ul class="nav-mobile" id="nav-menu" aria-label="Mobiele navigatie">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="index.php#diensten">Diensten</a></li>
+            <li><a href="index.php#over">Over ons</a></li>
+            <li><a href="index.php#blog">Blog</a></li>
+            <li><a href="index.php#contact">Contact</a></li>
+        </ul>
+    </header>
+    <main class="blog-main">
+        <article class="blog-post-detail">
+            <header class="blog-post-header">
+                <h1>Waarom regelmatig cv-onderhoud belangrijk is</h1>
+                <p class="blog-meta">Geplaatst op 6 juli 2025 door Loodgieter Paraat</p>
+                <img src="https://placehold.co/800x400?text=CV+Onderhoud+Tips" alt="Afbeelding bij cv onderhoud tips" class="blog-post-image">
+            </header>
+
+            <section class="blog-post-content">
+                <p>Een goed werkende cv-ketel is essentieel voor comfort en veiligheid in huis. Regelmatig onderhoud voorkomt storingen, verlengt de levensduur van je installatie en zorgt voor een lager energieverbruik. Loodgieter Paraat legt uit waarom cv-onderhoud zo belangrijk is en geeft praktische tips!</p>
+
+                <h2>1. Voorkom storingen en onverwachte kosten</h2>
+                <p>Door je cv-ketel jaarlijks te laten controleren en reinigen, verklein je de kans op storingen en dure reparaties. Een monteur signaleert slijtage of beginnende problemen op tijd, zodat je niet ineens zonder verwarming of warm water zit.</p>
+
+                <h2>2. Veiligheid voorop</h2>
+                <p>Een slecht onderhouden cv-ketel kan gevaarlijke situaties opleveren, zoals koolmonoxidelekkage. Tijdens een onderhoudsbeurt wordt gecontroleerd of de verbranding goed verloopt en of er geen lekkages zijn. Zo blijft je gezin veilig.</p>
+
+                <h2>3. Lager energieverbruik</h2>
+                <p>Een schone en goed afgestelde cv-ketel werkt efficiënter en verbruikt minder gas. Dit merk je direct op je energierekening. Ook het tijdig bijvullen en ontluchten van de installatie draagt bij aan een optimaal rendement.</p>
+
+                <h2>4. Langere levensduur van je cv-ketel</h2>
+                <p>Regelmatig onderhoud voorkomt overmatige slijtage en verlengt de levensduur van je cv-ketel. Zo stel je de aanschaf van een nieuwe installatie uit en bespaar je op lange termijn kosten.</p>
+
+                <h2>5. Controleer zelf tussen de beurten door</h2>
+                <p>Let op de waterdruk van je cv-installatie (meestal tussen 1,5 en 2 bar) en vul bij indien nodig. Ontlucht de radiatoren als je borrelende geluiden hoort of als ze niet goed warm worden. Twijfel je? Neem contact op met een vakman.</p>
+
+                <p>Wil je zeker zijn van een veilige en zuinige cv-ketel? Plan dan jaarlijks een onderhoudsbeurt in bij Loodgieter Paraat. Wij zorgen dat je installatie in topconditie blijft!</p>
+            </section>
+
+            <div class="blog-post-footer">
+                <a href="blog.php" class="terug-link">&larr; Terug naar het blogoverzicht</a>
+            </div>
+        </article>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <h3>Sitemap</h3>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="index.php#over">Over ons</a></li>
+                    <li><a href="index.php#diensten">Diensten</a></li>
+                    <li><a href="index.php#blog">Blog</a></li>
+                    <li><a href="index.php#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:info@loodgieterparaat.nl">info@loodgieterparaat.nl</a></li>
+                    <li>
+                        <a href="tel:0612345678" style="color:#ee9a3a;font-weight:bold;">
+                            06-12345678
+                        </a>
+                    </li>
+                    <li>Amsterdam, Nederland</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Social media</h3>
+                <div class="footer-socials">
+                    <a href="#" target="_blank" aria-label="Facebook" class="footer-icon">
+                        <!-- Facebook SVG -->
+                        <svg width="40" height="40" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="16" fill="#1f4b6e" />
+                            <path
+                                d="M20.5 16H18V25H15V16H13V13.5H15V12C15 10.62 15.62 9 18 9H20.5V11.5H19C18.45 11.5 18 11.95 18 12.5V13.5H20.5V16Z"
+                                fill="#ee9a3a" />
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Instagram" class="footer-icon">
+                        <!-- Instagram SVG -->
+                        <svg width="40" height="40" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="16" fill="#1f4b6e" />
+                            <rect x="10" y="10" width="12" height="12" rx="4" stroke="#ee9a3a" stroke-width="2"
+                                fill="none" />
+                            <circle cx="16" cy="16" r="3" stroke="#ee9a3a" stroke-width="2" fill="none" />
+                            <circle cx="21" cy="11" r="1" fill="#ee9a3a" />
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" aria-label="LinkedIn" class="footer-icon">
+                        <!-- LinkedIn SVG -->
+                        <svg width="40" height="40" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="16" fill="#1f4b6e" />
+                            <rect x="11" y="14" width="2" height="7" fill="#ee9a3a" />
+                            <rect x="19" y="17" width="2" height="4" fill="#ee9a3a" />
+                            <rect x="11" y="11" width="2" height="2" fill="#ee9a3a" />
+                            <rect x="15" y="17" width="2" height="4" fill="#ee9a3a" />
+                            <rect x="15" y="14" width="2" height="2" fill="#ee9a3a" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col footer-map">
+                <h3>Locatie</h3>
+                <iframe src="https://www.google.com/maps?q=Zeist&output=embed" width="100%" height="140" style="border:0;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <span>&copy; 2025 Loodgieter Paraat</span>
+            <span class="footer-divider">-</span>
+            <a href="#">Privacy Policy</a>
+            <span class="footer-divider">-</span>
+            <a href="#">Cookie Policy</a>
+            <span class="footer-divider">-</span>
+            <a href="#">Algemene Voorwaarden</a>
+            <span class="footer-divider">-</span>
+            <a href="https://www.linkedin.com/in/tahak030/" target="_blank style=" color: rgb(236, 236, 236);
+                text-decoration: none;">
+                Gerealiseerd door Taha Karaman
+            </a>
+        </div>
+    </footer>
+    <button id="backToTop" aria-label="Terug naar boven">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="20" height="20" aria-hidden="true">
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                fill="currentColor" />
+        </svg>
+    </button>
+    <script src="script.js"></script>
+    <script>
+        // Back to top button
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -9,47 +9,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-  <link rel="icon" href="loodgietersbedrijfParaat_logo.png">
+  <link rel="icon" href="loodgietersbedrijfParaatAchtergrond_logo.png" type="image/x-icon">
 </head>
 
 <body>
   <!-- Navigatie -->
-  <header>
-    <nav class="navbar" aria-label="Hoofdnavigatie">
-      <div class="nav-logo">
-        <a href="#hero" aria-label="Ga naar de homepage">
-          <img src="loodgietersbedrijfParaat_logo.png" alt="Loodgieter Paraat logo">
-        </a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#diensten">Diensten</a></li>
-        <li><a href="#over">Over ons</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <a href="tel:0612345678" class="cta-btn cta-call">
-          <span class="cta-icon">
-            <svg width="22" height="22" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-              <circle cx="14" cy="14" r="14" fill="#ee9a3a" />
-              <path d="M19.5 17.2l-2.1-1a1.2 1.2 0 0 0-1.3.3l-.9 1.1a9.2 9.2 0 0 1-4.3-4.3l1.1-.9a1.2 1.2 0 0 0 .3-1.3l-1-2.1a1.2 1.2 0 0 0-1.3-.7l-2.2.5a1.2 1.2 0 0 0-1 1.2c0 6.1 5 11.1 11.1 11.1a1.2 1.2 0 0 0 1.2-1l.5-2.2a1.2 1.2 0 0 0-.7-1.3z" fill="none" stroke="#fff" stroke-width="2" />
-            </svg>
-          </span>
-          06-12345678
-        </a>
-      </ul>
-      <button class="hamburger" aria-label="Menu openen" aria-expanded="false" aria-controls="nav-menu">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-    <ul class="nav-mobile" id="nav-menu" aria-label="Mobiele navigatie">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#diensten">Diensten</a></li>
-      <li><a href="#over">Over ons</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </header>
-
+  <?php include 'partials/nav.html'; ?>
   <!-- Hero -->
   <section id="hero" class="hero">
     <div class="hero-content">
@@ -69,71 +34,159 @@
     <h2>Onze Diensten</h2>
     <div class="diensten-grid">
       <div class="dienst">
-        <!-- Leidingwerk -->
-        <span class="dienst-icoon" aria-hidden="true">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-            <rect x="10" y="24" width="36" height="8" rx="4" fill="#ee9a3a" />
-            <rect x="24" y="10" width="8" height="36" rx="4" fill="#1f4b6e" />
-          </svg>
-        </span>
+        <div class="dienst-img-wrap">
+          <img src="https://placehold.co/320x140?text=Leidingwerk" alt="Leidingwerk" class="dienst-afbeelding" />
+          <span class="dienst-icoon" aria-hidden="true">
+            <span class="icoon-animatie">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <circle cx="28" cy="28" r="24" stroke="#ee9a3a" stroke-width="4" fill="#fff" />
+                <rect x="10" y="24" width="36" height="8" rx="4" fill="#ee9a3a" />
+                <rect x="24" y="10" width="8" height="36" rx="4" fill="#1f4b6e" />
+              </svg>
+            </span>
+          </span>
+        </div>
         <h3>Leidingwerk</h3>
         <p>Installatie en reparatie van water- en gasleidingen, altijd veilig en vakkundig.</p>
       </div>
       <div class="dienst">
-        <!-- Ontstopping -->
-        <span class="dienst-icoon" aria-hidden="true">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-            <circle cx="28" cy="28" r="18" stroke="#ee9a3a" stroke-width="6" fill="none" />
-            <rect x="25" y="10" width="6" height="24" rx="3" fill="#1f4b6e" />
-            <rect x="22" y="34" width="12" height="8" rx="4" fill="#ee9a3a" />
-          </svg>
-        </span>
+        <div class="dienst-img-wrap">
+          <img src="https://placehold.co/320x140?text=Ontstopping" alt="Ontstopping" class="dienst-afbeelding" />
+          <span class="dienst-icoon" aria-hidden="true">
+            <span class="icoon-animatie">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <circle cx="28" cy="28" r="24" stroke="#ee9a3a" stroke-width="4" fill="#fff" />
+                <rect x="25" y="10" width="6" height="24" rx="3" fill="#1f4b6e" />
+                <rect x="22" y="34" width="12" height="8" rx="4" fill="#ee9a3a" />
+              </svg>
+            </span>
+          </span>
+        </div>
         <h3>Ontstopping</h3>
         <p>Snelle ontstopping van afvoer, riool en gootsteen. 24/7 bereikbaar!</p>
       </div>
       <div class="dienst">
-        <!-- Verwarming -->
-        <span class="dienst-icoon" aria-hidden="true">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-            <rect x="18" y="18" width="20" height="20" rx="10" fill="#ee9a3a" />
-            <rect x="26" y="10" width="4" height="12" rx="2" fill="#1f4b6e" />
-            <rect x="26" y="34" width="4" height="12" rx="2" fill="#1f4b6e" />
-          </svg>
-        </span>
-        <h3>Verwarming</h3>
-        <p>Plaatsen, onderhouden en repareren van cv-ketels en radiatoren.</p>
+        <div class="dienst-img-wrap">
+          <img src="https://placehold.co/320x140?text=Lekkage" alt="Lekkage" class="dienst-afbeelding" />
+          <span class="dienst-icoon">
+            <span class="icoon-animatie">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="24" fill="#fff" stroke="#ee9a3a" stroke-width="4" />
+                <g>
+                  <path d="M38 20H18" stroke="#1f4b6e" stroke-width="2" stroke-miterlimit="10" />
+                  <path d="M18 32H38" stroke="#1f4b6e" stroke-width="2" stroke-miterlimit="10" />
+                  <path d="M38 34H42V18H38V34Z" stroke="#1f4b6e" stroke-width="2" stroke-miterlimit="10" />
+                  <path d="M14 34H18V18H14V34Z" stroke="#1f4b6e" stroke-width="2" stroke-miterlimit="10" />
+                  <path d="M28 32V28L26.5 25.5L28 22L32 20.8" stroke="#1f4b6e" stroke-width="2"
+                    stroke-miterlimit="10" />
+                  <path d="M25.5 20.5L28 22" stroke="#1f4b6e" stroke-width="2" stroke-miterlimit="10" />
+                  <path d="M24.5 25L26.5 25.5" stroke="#1f4b6e" stroke-width="2" stroke-miterlimit="10" />
+                  <ellipse cx="28" cy="39" rx="2.5" ry="3.5" fill="#1f4b6e" />
+                  <ellipse cx="32" cy="43" rx="1" ry="1.5" fill="#1f4b6e" opacity="0.7" />
+                  <ellipse cx="29" cy="37.5" rx="0.6" ry="0.9" fill="#fff" opacity="0.5" />
+                </g>
+              </svg>
+            </span>
+          </span>
+        </div>
+        <h3>Lekkage</h3>
+        <p>Wij helpen u snel en effectief bij het opsporen en verhelpen van lekkages.</p>
       </div>
       <div class="dienst">
-        <!-- Badkamer renovatie -->
-        <span class="dienst-icoon" aria-hidden="true">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-            <rect x="12" y="32" width="32" height="10" rx="5" fill="#ee9a3a" />
-            <rect x="22" y="14" width="12" height="18" rx="6" fill="#1f4b6e" />
-          </svg>
-        </span>
+        <div class="dienst-img-wrap">
+          <img src="https://placehold.co/320x140?text=Riolering" alt="Riolering" class="dienst-afbeelding" />
+          <span class="dienst-icoon">
+            <span class="icoon-animatie">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" aria-hidden="true">
+                <circle cx="28" cy="28" r="24" stroke="#ee9a3a" stroke-width="4" fill="#fff" />
+                <ellipse cx="28" cy="32" rx="10" ry="4" fill="#fff" stroke="#1f4b6e" stroke-width="2" />
+                <path d="M28 18c2 3 4 6 4 8a4 4 0 1 1-8 0c0-2 2-5 4-8z" fill="#1f4b6e" />
+              </svg>
+            </span>
+          </span>
+        </div>
+        <h3>Riolering</h3>
+        <p>
+          Problemen met uw riolering? Wij verhelpen verstoppingen, lekkages en stankoverlast snel en vakkundig. Ook voor
+          aanleg en renovatie van uw riolering.
+        </p>
+      </div>
+      <div class="dienst">
+        <div class="dienst-img-wrap">
+          <img src="https://placehold.co/320x140?text=Badkamer+renovatie" alt="Badkamer renovatie"
+            class="dienst-afbeelding" />
+          <span class="dienst-icoon">
+            <span class="icoon-animatie">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="24" fill="#fff" stroke="#ee9a3a" stroke-width="4" />
+                <g transform="translate(14,17) scale(0.052)">
+                  <path
+                    d="M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3L32 256c-17.7 0-32 14.3-32 32s14.3 32 32 32l448 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 256 96 77.3zM32 352l0 16c0 28.4 12.4 54 32 71.6L64 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-16 256 0 0 16c0 17.7 14.3 32 32 32s32-14.3 32-32l0-40.4c19.6-17.6 32-43.1 32-71.6l0-16L32 352z"
+                    fill="none" stroke="#1f4b6e" stroke-width="28" />
+                </g>
+              </svg>
+            </span>
+          </span>
+        </div>
         <h3>Badkamer renovatie</h3>
         <p>Complete renovatie of kleine aanpassingen, wij maken uw badkamer weer als nieuw.</p>
       </div>
       <div class="dienst">
-        <!-- Dakwerk -->
-        <span class="dienst-icoon" aria-hidden="true">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-            <polygon points="8,32 28,12 48,32" fill="#ee9a3a" />
-            <rect x="18" y="32" width="20" height="12" rx="4" fill="#1f4b6e" />
-          </svg>
-        </span>
-        <h3>Dakwerk</h3>
-        <p>Van lekkage tot volledige dakrenovatie, wij staan paraat.</p>
+        <div class="dienst-img-wrap">
+          <img src="https://placehold.co/320x140?text=Kraan+vervangen" alt="Kraan vervangen"
+            class="dienst-afbeelding" />
+          <span class="dienst-icoon">
+            <span class="icoon-animatie">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="24" fill="#fff" stroke="#ee9a3a" stroke-width="4" />
+                <g transform="translate(17,16) scale(0.052)">
+                  <path
+                    d="M224 0c17.7 0 32 14.3 32 32l0 12 96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32L256 84l-31-3.9-1-.1-1 .1L192 84 96 96C78.3 96 64 81.7 64 64s14.3-32 32-32l96 12 0-12c0-17.7 14.3-32 32-32zM0 224c0-17.7 14.3-32 32-32l96 0 22.6-22.6c6-6 14.1-9.4 22.6-9.4l18.7 0 0-43.8 32-4 32 4 0 43.8 18.7 0c8.5 0 16.6 3.4 22.6 9.4L320 192l32 0c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32s-14.3-32-32-32l-36.1 0c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48L32 320c-17.7 0-32-14.3-32-32l0-64zM436.8 423.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1l0 1.2c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-1.2c0-4.5 .9-8.9 2.7-13.1l18.2-42.4z"
+                    fill="none" stroke="#1f4b6e" stroke-width="28" />
+                </g>
+              </svg>
+            </span>
+          </span>
+        </div>
+        <h3>Kraan vervangen</h3>
+        <p>Wij vervangen uw oude kraan snel en vakkundig voor een nieuwe, moderne kraan.</p>
       </div>
       <div class="dienst">
-        <!-- Spoedservice -->
-        <span class="dienst-icoon" aria-hidden="true">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-            <circle cx="28" cy="28" r="24" stroke="#ee9a3a" stroke-width="4" fill="none" />
-            <rect x="26" y="14" width="4" height="16" rx="2" fill="#1f4b6e" />
-            <circle cx="28" cy="38" r="3" fill="#1f4b6e" />
-          </svg>
-        </span>
+        <div class="dienst-img-wrap">
+          <img src="https://placehold.co/320x140?text=Keuken+renovatie" alt="Keuken renovatie"
+            class="dienst-afbeelding" />
+          <span class="dienst-icoon">
+            <span class="icoon-animatie">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="24" fill="#fff" stroke="#ee9a3a" stroke-width="4" />
+                <rect x="16" y="26" width="24" height="10" rx="2" fill="#fff" stroke="#1f4b6e" stroke-width="2" />
+                <line x1="28" y1="26" x2="28" y2="36" stroke="#1f4b6e" stroke-width="2" />
+                <circle cx="22" cy="31" r="0.8" fill="#1f4b6e" />
+                <circle cx="34" cy="31" r="0.8" fill="#1f4b6e" />
+                <rect x="14" y="24" width="28" height="4" rx="2" fill="#fff" stroke="#1f4b6e" stroke-width="2" />
+                <rect x="22" y="24" width="12" height="4" rx="1" fill="#fff" stroke="#1f4b6e" stroke-width="1.2" />
+                <path d="M32 24 Q32 20 28 20 Q24 20 24 24" stroke="#1f4b6e" stroke-width="2" fill="none" />
+                <rect x="27" y="19" width="2" height="3" rx="1" fill="#fff" stroke="#1f4b6e" stroke-width="1" />
+              </svg>
+            </span>
+          </span>
+        </div>
+        <h3>Keuken renovatie</h3>
+        <p>Complete renovatie of kleine aanpassingen, wij maken uw keuken weer als nieuw.</p>
+      </div>
+      <div class="dienst">
+        <div class="dienst-img-wrap">
+          <img src="https://placehold.co/320x140?text=Spoedservice" alt="Spoedservice" class="dienst-afbeelding" />
+          <span class="dienst-icoon" aria-hidden="true">
+            <span class="icoon-animatie">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <circle cx="28" cy="28" r="24" stroke="#ee9a3a" stroke-width="4" fill="#fff" />
+                <rect x="26" y="14" width="4" height="16" rx="2" fill="#1f4b6e" />
+                <circle cx="28" cy="38" r="3" fill="#1f4b6e" />
+              </svg>
+            </span>
+          </span>
+        </div>
         <h3>Spoedservice</h3>
         <p>Direct hulp bij lekkages of verstoppingen, dag en nacht bereikbaar.</p>
       </div>
@@ -150,7 +203,8 @@
         <h2>Over Loodgieter Paraat</h2>
         <p>
           Met meer dan 15 jaar ervaring staan wij bekend om onze betrouwbaarheid, vakmanschap en snelle service.
-          Of het nu gaat om een kleine reparatie of een grote renovatie, wij denken met u mee en leveren altijd kwaliteit.
+          Of het nu gaat om een kleine reparatie of een grote renovatie, wij denken met u mee en leveren altijd
+          kwaliteit.
         </p>
         <p>
           Wij zijn pas tevreden als u dat ook bent!
@@ -167,20 +221,23 @@
         <img src="images/plumbing-repair-service.jpg" alt="Blog loodgieter tips">
         <h3>5 Tips om Verstoppingen te Voorkomen</h3>
         <p>Voorkom verstoppingen in huis met deze eenvoudige tips van onze loodgieters.</p>
-        <a href="#">Lees meer</a>
+        <a href="verstoppingen-tips.php">Lees meer</a>
       </article>
       <article class="blogpost">
         <img src="images/worker-repairing-water-heater.jpg" alt="Blog cv onderhoud">
         <h3>Waarom Regelmatig CV-onderhoud Belangrijk is</h3>
         <p>Een goed onderhouden cv-ketel voorkomt storingen en bespaart kosten.</p>
-        <a href="#">Lees meer</a>
+        <a href="cv-onderhoud-tips.php">Lees meer</a>
       </article>
       <article class="blogpost">
         <img src="images/service-maintenance-worker-repairing.jpg" alt="Blog lekkage oplossen">
         <h3>Lekkage? Dit Moet U Doen!</h3>
         <p>Ontdek wat u direct kunt doen bij een lekkage en wanneer u ons moet bellen.</p>
-        <a href="#">Lees meer</a>
+        <a href="lekkage-tips.php">Lees meer</a>
       </article>
+    </div>
+    <div class="blog-meer">
+      <a href="blog.php" class="btn">Bekijk alle blogs &rarr;</a>
     </div>
   </section>
 
@@ -192,7 +249,9 @@
         <span class="call-badge">
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" style="margin-right:10px;">
             <circle cx="14" cy="14" r="14" fill="#ee9a3a" />
-            <path d="M19.5 17.2l-2.1-1a1.2 1.2 0 0 0-1.3.3l-.9 1.1a9.2 9.2 0 0 1-4.3-4.3l1.1-.9a1.2 1.2 0 0 0 .3-1.3l-1-2.1a1.2 1.2 0 0 0-1.3-.7l-2.2.5a1.2 1.2 0 0 0-1 1.2c0 6.1 5 11.1 11.1 11.1a1.2 1.2 0 0 0 1.2-1l.5-2.2a1.2 1.2 0 0 0-.7-1.3z" fill="none" stroke="#fff" stroke-width="2" />
+            <path
+              d="M19.5 17.2l-2.1-1a1.2 1.2 0 0 0-1.3.3l-.9 1.1a9.2 9.2 0 0 1-4.3-4.3l1.1-.9a1.2 1.2 0 0 0 .3-1.3l-1-2.1a1.2 1.2 0 0 0-1.3-.7l-2.2.5a1.2 1.2 0 0 0-1 1.2c0 6.1 5 11.1 11.1 11.1a1.2 1.2 0 0 0 1.2-1l.5-2.2a1.2 1.2 0 0 0-.7-1.3z"
+              fill="none" stroke="#fff" stroke-width="2" />
           </svg>
           <span>Direct hulp nodig?</span>
           <a href="tel:0612345678" class="call-number">06-12345678</a>
@@ -223,79 +282,32 @@
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <!-- Footer -->
-  <footer class="main-footer">
-    <div class="footer-top">
-      <div class="footer-col">
-        <h3>Sitemap</h3>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#over">Over ons</a></li>
-          <li><a href="#diensten">Diensten</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>Contact</h3>
-        <ul>
-          <li><a href="mailto:info@loodgieterparaat.nl">info@loodgieterparaat.nl</a></li>
-          <li>
-            <a href="tel:0612345678" style="color:#ee9a3a;font-weight:bold;">
-              06-12345678
-            </a>
-          </li>
-          <li>Amsterdam, Nederland</li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>Social media</h3>
-        <div class="footer-socials">
-          <a href="#" target="_blank" aria-label="Facebook" class="footer-icon">
-            <!-- Facebook SVG -->
-            <svg width="40" height="40" viewBox="0 0 32 32" fill="none">
-              <circle cx="16" cy="16" r="16" fill="#1f4b6e" />
-              <path d="M20.5 16H18V25H15V16H13V13.5H15V12C15 10.62 15.62 9 18 9H20.5V11.5H19C18.45 11.5 18 11.95 18 12.5V13.5H20.5V16Z" fill="#ee9a3a" />
-            </svg>
-          </a>
-          <a href="#" target="_blank" aria-label="Instagram" class="footer-icon">
-            <!-- Instagram SVG -->
-            <svg width="40" height="40" viewBox="0 0 32 32" fill="none">
-              <circle cx="16" cy="16" r="16" fill="#1f4b6e" />
-              <rect x="10" y="10" width="12" height="12" rx="4" stroke="#ee9a3a" stroke-width="2" fill="none" />
-              <circle cx="16" cy="16" r="3" stroke="#ee9a3a" stroke-width="2" fill="none" />
-              <circle cx="21" cy="11" r="1" fill="#ee9a3a" />
-            </svg>
-          </a>
-          <a href="#" target="_blank" aria-label="LinkedIn" class="footer-icon">
-            <!-- LinkedIn SVG -->
-            <svg width="40" height="40" viewBox="0 0 32 32" fill="none">
-              <circle cx="16" cy="16" r="16" fill="#1f4b6e" />
-              <rect x="11" y="14" width="2" height="7" fill="#ee9a3a" />
-              <rect x="19" y="17" width="2" height="4" fill="#ee9a3a" />
-              <rect x="11" y="11" width="2" height="2" fill="#ee9a3a" />
-              <rect x="15" y="17" width="2" height="4" fill="#ee9a3a" />
-              <rect x="15" y="14" width="2" height="2" fill="#ee9a3a" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="footer-bottom">
-      <span>&copy; 2025 Loodgieter Paraat</span>
-      <span class="footer-divider">-</span>
-      <a href="#">Privacy Policy</a>
-      <span class="footer-divider">-</span>
-      <a href="#">Cookie Policy</a>
-      <span class="footer-divider">-</span>
-      <a href="#">Algemene Voorwaarden</a>
-      <span class="footer-divider">-</span>
-      <a href="https://www.linkedin.com/in/tahak030/" target="_blank style=" color: rgb(236, 236, 236); text-decoration: none;">
-        Gerealiseerd door Taha Karaman
-      </a>
-    </div>
-  </footer>
+  <?php include 'partials/footer.html'; ?>
+  <button id="backToTop" aria-label="Terug naar boven">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="20" height="20" aria-hidden="true">
+      <path
+        d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        fill="currentColor" />
+    </svg>
+  </button>
   <script src="script.js"></script>
+  <script>
+    // Back to top button
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
 </body>
 
 </html>
